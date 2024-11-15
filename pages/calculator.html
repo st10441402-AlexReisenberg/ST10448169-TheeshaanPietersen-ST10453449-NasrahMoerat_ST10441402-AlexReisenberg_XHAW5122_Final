@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../js/scripts.js"></script>
+  <title>Fee Calculator - Empowering the Nation</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <meta name="description" content="Calculate the total fees for the courses you are interested in with our Fee Calculator.">
+  <meta name="keywords" content="fee calculator, course fees, training programs">
+  <meta name="author" content="Empowering the Nation">
+</head>
+<body>
+  <header>
+    <div class="log-name">
+      <img src="../img/logo.jpg" alt="Empowering the Nation Logo" style=" height: auto;">
+      <h1>Empowering the Nation</h1>
+    </div>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">☰</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="../index.html">Home</a>
+        <a href="./courses.html">Courses Summary</a>
+        <a href="./calculator.html">Calculate Fees</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+    </div>
+    <nav>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="./courses.html">Courses Summary</a></li>
+        <li><a href="./calculator.html">Calculate Fees</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="calculator">
+    <h2>Calculate Your Fees</h2>
+    <form id="feeForm">
+      <fieldset>
+        <legend>Select Courses:</legend>
+        <label for="course1">
+          <input type="checkbox" name="course" value="1500" id="course1"> First Aid (R1500)
+        </label>
+        <label for="course2">
+          <input type="checkbox" name="course" value="1500" id="course2"> Sewing (R1500)
+        </label>
+        <label for="course3">
+          <input type="checkbox" name="course" value="1500" id="course3"> Landscaping (R1500)
+        </label>
+        <label for="course4">
+          <input type="checkbox" name="course" value="1500" id="course4"> Life Skills (R1500)
+        </label>
+        <label for="course5">
+          <input type="checkbox" name="course" value="750" id="course5"> Child Minding (R750)
+        </label>
+        <label for="course6">
+          <input type="checkbox" name="course" value="750" id="course6"> Cooking (R750)
+        </label>
+        <label for="course7">
+          <input type="checkbox" name="course" value="750" id="course7"> Garden maintenance (R750)
+        </label>
+      </fieldset>
+      <button type="button" onclick="calculateFees()">Calculate Total</button>
+      <div class="cta">
+        <a href="../index.html" class="button">Back</a>
+      </div>    
+    </form>
+   
+    <p id="totalCost">Total Cost: R0</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Empowering the Nation. All Rights Reserved.</p>
+  </footer>
+
+<script src="../js/scripts.js"></script>
+</body>
+</html>
