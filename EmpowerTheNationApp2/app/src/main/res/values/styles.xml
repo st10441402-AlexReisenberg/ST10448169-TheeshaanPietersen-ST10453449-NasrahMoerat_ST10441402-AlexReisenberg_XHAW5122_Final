@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="Theme.EmpowerTheNationApp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryDark">@color/primary_green</item>
+        <item name="colorAccent">@color/primary_green</item>
+
+        <!-- Apply red color for buttons -->
+        <item name="buttonStyle">@style/GreenButtonStyle</item>
+
+
+    </style>
+
+    <!-- Button Style -->
+    <style name="GreenButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/primary_green</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>
